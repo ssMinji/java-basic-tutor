@@ -18,6 +18,14 @@ public class CustomerTest {
 		
 		// 결론: 하나의 클래스에서 여러개의 인터페이스 구현 가능 
 		//      인스턴의 타입이 어떤 것으로 바인딩 되었느냐에 따라 호출되는 것이 한정될 수 있음 
+		
+		
+		// 디폴트 메서드 오버라이딩 후 
+		customer.order();
+		buyer.order();
+		seller.order();
+		// 결과 전부 동일! -> 가상메서드 (인스턴스의 메서드가 불리는 것)
+		// 현재 어사인된 인스턴스가 Customer이므로Customer의 order가 불리는 것 
 	}
 
 }
